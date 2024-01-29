@@ -1,0 +1,24 @@
+<div class="container">
+    <!-- calculator.component.html -->
+  
+    <div>
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" [(ngModel)]="num1" class="form-control"/>
+    </div>
+  
+    <div>
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" [(ngModel)]="num2" class="form-control"/>
+    </div>
+  
+    <div class="mt-3">
+      <button class="btn btn-primary ms-3" (click)="add()">Add</button>
+      <button class="btn btn-primary ms-3" (click)="subtract()">Subtract</button>
+      <button class="btn btn-primary ms-3" (click)="multiply()">Multiply</button>
+      <button class="btn btn-primary ms-3" (click)="divide()">Divide</button>
+    </div>
+  
+    <div class="mt-3">
+      <p>Result: {{ result }}</p>
+    </div>
+  </div>
